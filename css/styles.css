@@ -417,14 +417,10 @@ button {
   text-align: center;
 }
 
-.team-item-icon-block {
+.team-item-icon.list {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.team-item-icon.list {
-  display: flex;
   gap: 24px;
 }
 
