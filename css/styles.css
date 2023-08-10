@@ -216,11 +216,17 @@ button {
 
 /* order-section */
 .order-section {
-  padding: 188px 0;
-  background: var(--navyblue, #2e2f42);
-  color: var(--WHITE);
   display: block;
-  flex-shrink: 0;
+  padding: 188px 0;
+  color: var(--WHITE);
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background-color: var(--navyblue, #2e2f42);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headline-one {
@@ -267,6 +273,16 @@ button {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.servise-description-icon-block {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+
+  background-color: var(--CLOUD);
 }
 
 /* product-image-section */
@@ -328,6 +344,48 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-item-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-item-icon.list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Iris);
+  border-radius: 50%;
+  padding: 12px;
+
+  fill: var(--CLOUD);
+}
+
+/* Customers sections */
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-logo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-logo.list {
+  display: flex;
+  gap: 24px;
+
+  fill: var(--LIGHT-SLATE);
 }
 
 /* SECTION STYLES PORTFOLIO PAGE */
@@ -396,10 +454,51 @@ button {
 
 .footer-text {
   color: var(--cloud, #f4f4fd);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   width: 264px;
+}
+
+.container.footer {
+  display: flex;
+  gap: 120px;
 }
 
 .container.footer .logo {
   display: inline-block;
+  margin-bottom: 16px;
+}
+
+.social-media-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-item-icon.list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Iris);
+  border-radius: 50%;
+  padding: 8px;
+
+  fill: var(--CLOUD);
+}
+
+.social-media-text {
+  color: var(--WHITE);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
