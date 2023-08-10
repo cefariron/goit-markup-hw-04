@@ -24,7 +24,7 @@
         <!-- Logo link -->
         <a class="logo link" href="./index.html">Web<span class="logo-part-two">Studio</span></a>
         <ul class="nav list">
-          <li><a class="nav link" href="./index.html">Studio</a></li>
+          <li><a class="nav link current" href="./index.html">Studio</a></li>
           <li><a class="nav link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="nav link" href="">Contacts</a></li>
         </ul>
@@ -48,7 +48,16 @@
     <section class="order-section">
       <div class="container order">
         <h1 class="headline-one">Effective Solutions for Your Business</h1>
-        <button class="ord-btn" type="button">Order Service</button>
+        <button class="ord-btn" type="button" data-modal-open>Order Service</button>
+        <!-- modal window -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              Hello
+            </p>
+            <button data-modal-close>Close</button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- service description -->
@@ -325,32 +334,32 @@
         <h2 class="headline-two">Customers</h2>
         <div class="customers-logo-block">
           <ul class="customers-logo list">
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </li>
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo-2" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo-2"></use>
               </svg>
             </li>
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo-3" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo-3"></use>
               </svg>
             </li>
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo-4" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo-4"></use>
               </svg>
             </li>
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo-5" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo-5"></use>
               </svg>
             </li>
-            <li>
+            <li class="customers-logo-item">
               <svg class="icon-Logo-6" width="168" height="88">
                 <use href="./images/icons.svg#icon-Logo-6"></use>
               </svg>
@@ -417,6 +426,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
