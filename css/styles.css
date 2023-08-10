@@ -417,7 +417,7 @@ button {
   text-align: center;
 }
 
-.team-item-icon.list {
+.team-icon.list {
   display: flex;
   justify-content: center;
   align-items: center;
