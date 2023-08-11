@@ -107,11 +107,6 @@ img {
   background-color: var(--OCEAN);
 }
 
-.social-media-icon-wrapper:hover,
-.social-media-icon-wrapper:focus {
-  background-color: var(--GREEN);
-}
-
 .row-item:hover,
 .row-item:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -432,7 +427,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-social {
+.logo-icon-social {
   fill: var(--CLOUD);
 }
 
@@ -593,7 +588,11 @@ button {
 
 .container.footer {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-text-block {
+  margin-right: 120px;
 }
 
 .container.footer .logo {
@@ -601,27 +600,32 @@ button {
   margin-bottom: 16px;
 }
 
-.social-media-icon-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-media-item-icon.list {
+.social-media-icon.list {
   display: flex;
   gap: 16px;
 }
 
-.social-media-icon-wrapper {
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+.social-media-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  width: 100%;
+  height: 100%;
 
   background-color: var(--Iris);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   fill: var(--CLOUD);
+}
+
+.social-media-icon-link:hover,
+.social-media-icon-link:focus {
+  background-color: var(--GREEN);
 }
 
 .social-media-text {
