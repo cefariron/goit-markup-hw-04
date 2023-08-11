@@ -614,7 +614,7 @@ button {
 
 /* MODAL */
 
-.backdrop.is-hidden {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
